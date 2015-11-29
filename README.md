@@ -44,3 +44,19 @@ Sample code and mini projects for the MongoDBx: M101x Introduction to MongoDB us
 
 #### test-kitten
 * `npm run test-kitten`
+
+
+## Course 2
+
+### Highlights
+Hint: Store (in models) what you query for.
+
+`Virtuals` are not by default included in `toObject` and `toJSON` functions. This should be set explicitly
+
+```
+schema.set('toObject', {virtuals: true});
+schema.set('toJSON', {virtuals: true});
+```
+
+### References and Links
+* Cardinality https://en.wikipedia.org/wiki/Cardinality
